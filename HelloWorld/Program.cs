@@ -12,7 +12,7 @@ namespace HelloWorld
         {
             Console.WriteLine("Enter your name: ");
             string name = Console.ReadLine();
-            Console.WriteLine($"Hello World! {name}");
+            Console.WriteLine($"Hello {name}!");
             Console.ReadLine();
         }
     }
