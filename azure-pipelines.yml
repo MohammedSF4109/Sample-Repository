@@ -2,7 +2,7 @@
 # C# console application 
 
 trigger:
-- master
+- Master
 
 pool:
   name: Default
