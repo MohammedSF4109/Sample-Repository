@@ -19,7 +19,7 @@ steps:
 
   - task: DotNetCoreInstaller@0
     inputs:
-      packageType: 'sdk'
+      packageType: 'runtime'
       version: '7.0.102'
 
   - task: DotNetCoreCLI@2
