@@ -16,7 +16,8 @@ variables:
 
 steps:
 #installing dotnet core 
-  - task: UseDotNet@2
+
+  - task: DotNetCoreInstaller@0
     inputs:
       packageType: 'sdk'
       version: '7.0.102'
