@@ -19,8 +19,8 @@ steps:
 
   - task: UseDotNet@2
     inputs:
-      packageType: 'sdk'
-      version: '7.0.102'
+      packageType: 'runtime'
+      version: '5.0.x'
 
   - task: DotNetCoreCLI@2
     displayName: 'dotnet build $(buildConfiguration)'
