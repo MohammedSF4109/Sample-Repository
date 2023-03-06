@@ -15,11 +15,6 @@ variables:
 
 
 steps:
-  - task: DotNetCoreInstaller@1
-    inputs:
-      packageType: 'sdk'
-      version: '7.0.102'
-
 #To build the project file
   - script: dotnet build --configuration $(buildConfiguration)
     displayName: 'dotnet build $(buildConfiguration)'
