@@ -27,7 +27,7 @@ steps:
       command: build
       projects: 'HelloWorld/HelloWorld.csproj'
       arguments: '--configuration $(buildConfiguration)'
-      
+
 #To build the project file
 #  - script: dotnet build --configuration $(buildConfiguration)
 #   displayName: 'dotnet build $(buildConfiguration)'
