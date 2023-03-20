@@ -27,10 +27,10 @@ steps:
 
 #To publish the build arifact to a directory for deployment
   - task: DotNetCoreCLI@2
-    displayName: 'dotnet publish --cofiguration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    displayName: 'dotnet publish --cofiguration $(buildConfiguration) --output $(Build.StagingDirectory)'
     inputs:
       command: publish
       publishWebProjects: false
       projects: '**/*.csproj'
-      arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+      arguments: '--configuration $(buildConfiguration) --output $(Build.StagingDirectory)'
       zipAfterPublish: true
